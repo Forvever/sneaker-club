@@ -1,0 +1,44 @@
+.nav {
+    position: relative;
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+.one {
+    position: absolute;
+    left:15%;
+    width: 1000px;
+    height: 306.6px;
+    overflow: hidden;
+}
+.one_cantent img {
+    width: 1000px;
+    height: 306.6px;
+    float: left;
+}
+.one_cantent {
+    width: 5000px;
+    height: 400px;
+    position: absolute;
+    left: 0px;
+    animation-name: move;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+@keyframes move {
+    0% {
+        left: 0px;
+    }
+    25% {
+        left: -1000px;
+    }
+    50% {
+        left: -2000px;
+    }
+    75% {
+        left: -3000px;
+    }
+    100% {
+        left: -4000px
+    }
+}

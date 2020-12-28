@@ -1,0 +1,194 @@
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+#floatdiv{
+    width: 282px;
+    height: 220px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fbb;
+    z-index: 999;
+    border: 1px solid #ccc;
+    border-radius: 10px 10px ;
+}
+span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: darksalmon;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0 5px;
+    cursor: pointer;
+    border-radius: 20% 20%;
+}
+* {
+    box-sizing: border-box;
+}
+h1.date {text-align:left;}
+p.main {text-align:left;}
+ul.breadcrumb {
+    padding: 8px 16px;
+    list-style: none;
+    background-color: #eee;
+}
+ul.breadcrumb li {display: inline;}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+ul.clearfix {
+    overflow: auto;
+}
+ul.breadcrumb li a {color: BLACK;}
+input[type=text] {
+    float:right;
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../网页所需图片/searchicon.jpg');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 20%;
+}
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+.nav {
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* 头部样式 */
+.header {
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* 创建两个不等的列 */
+.leftcolumn {
+    float: left;
+    width: 25%;
+}
+
+/* 右侧栏 */
+.rightcolumn {
+    float: left;
+    width: 75%;
+    background-color: #f1f1f1;
+}
+
+/* 列后清除浮动 */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* 照片 */
+div.img {
+    position: relative;
+    margin: 5px;
+    float: left;
+    width: 300px;
+}
+
+div.img:hover {
+    border: 1px solid #cccccc;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+/* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+/* 表单 */
+put[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+put[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+put[type=submit]:hover {
+    background-color: #45a049;
+}

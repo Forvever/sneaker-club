@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>首页</title>
+    <link rel="stylesheet" href="css/SignUpStyle.css">
+    <script>
+    	//消除cookie的函数
+        function logout() {
+            document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 GMT";
+            location.reload();//刷新页面
+        }
+		//获取cookie的函数
+        function getCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i].trim();
+                if (c.indexOf(name) == 0) { return c.substring(name.length, c.length); }
+            }
+            return "";
+        }
+        //检测cookie函数
+        function checkCookie() {
+            var user = getCookie("username");//获取cookie
+            if (user.toString() == "") {
+				//若用户为空的事件
+            }
+            else {
+                document.getElementById("a1").remove();//删除id为a1的标签
+                document.getElementById("mine").innerHTML = user;//将用户插入到块里面
+            }
+        }  
+    </script>
+</head>
+<body onload="checkCookie()">
+    <center><h1>Sneakers</h1></center>
+    <div class="sign-div">
+        <h2>欢迎</h2>
+        <text class="sign-text" id="mine"></text>
+        <a id="a1" href="login.html">请先登录</a>
+        <button class="sign-btn" type="button" onclick="logout()">注销</button>
+        <a id="a2" href="首页.html">进入</a>
+    </div>
+</body>
+</html>

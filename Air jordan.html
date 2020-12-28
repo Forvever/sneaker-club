@@ -1,0 +1,223 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sneakerclub Air jordan</title>
+    <link rel="stylesheet" href="css/Air%20jordan.css" type="text/css">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#flip").click(function(){
+                $("#panel").slideToggle("slow");
+            });
+        });
+    </script>
+
+    <style type="text/css">
+        #panel,#flip
+        {
+            padding:5px;
+            text-align:center;
+            background-color: #ffffff;
+            border:solid 1px #ffffff;
+        }
+        #panel
+        {
+            padding:50px;
+            display:none;
+        }
+    </style>
+</head>
+<body>
+<div id="floatdiv">
+    <a href="index.html"><img src="网页所需图片/join%20us.jpg" alt="picture1" ></a>
+    <span id="Clickclose" >X</span>
+</div>
+<script type="text/javascript">
+    var isinter;
+    var millisec = 30;//定时器间隔执行时间/毫秒
+    var xfloat = 0; //漂浮层x坐标
+    var yfloat = 0; //漂浮层y坐标
+    var yistop = false;
+    var xisleft = true;
+    function floatanimation(){
+        var	visiblewidth = $(window).width();//可视区域宽度
+        var	visibleheight = $(window).height();//可视区域高度
+
+        var	divwidth = $('#floatdiv').width();//div漂浮层宽度
+        var divheight = $('#floatdiv').height();//div漂浮层高度
+
+        var hstop = jQuery(window).scrollTop();//滚动条距离顶部的高度
+        var wsleft = jQuery(window).scrollLeft();//滚动条距离最左边的距离
+
+        var offwidth = (visiblewidth-divwidth);//div偏移的宽度
+        var offheight = (visibleheight-divheight);//div偏移的高度
+
+        if (!yistop) {
+            yfloat++;
+            if (yfloat >= offheight) {
+                yistop = true;
+            }
+        } else {
+            yfloat--;
+            if (yfloat <= 0) {
+                yistop = false;
+            }
+        }
+
+        if (xisleft) {
+            xfloat++;
+            if (xfloat >= offwidth) {
+                xisleft = false;
+            }
+        } else {
+            xfloat--;
+            if (xfloat <= 0) {
+                xisleft = true;
+            }
+        }
+        /* 如果使用固定定位，请把加上滚动条的距离去掉即可 */
+        $('#floatdiv').css({'top':yfloat+hstop,'left':xfloat+wsleft});
+    }
+
+    $(function () {
+        isinter = setInterval("floatanimation()",millisec);
+        $('#floatdiv').mouseover(function () {
+            clearInterval(isinter);
+        }).mouseout(function () {
+            isinter = setInterval("floatanimation()",millisec);
+        });
+        $('#Clickclose').click(function () {
+            $(this).parents("#floatdiv").slideUp(500,function(){
+                clearInterval(isinter);
+                $(this).remove();
+            });
+        });
+    });
+</script>
+<div class="nav">
+    <img src="网页所需图片/网站标题.jpg" alt="picture1" width="312" height="78">
+        <ul class="breadcrumb clearfix">
+            <li><a href="http://localhost:63342/创新实践/Air jordan.html">Air jordan </a></li>
+            <li><a href="http://localhost:63342/创新实践/Nike.html">Nike </a></li>
+            <li><a href="http://localhost:63342/创新实践/Adidas.html">Adidas </a></li>
+            <li><a href="http://localhost:63342/创新实践/Yeezy.html">Yeezy </a></li>
+            <li><a href="http://localhost:63342/创新实践/More Sneakers.html">More Sneakers </a></li>
+            <li><a href="http://localhost:63342/创新实践/Releases.html">New Releases </a></li>
+            <li><a href="http://localhost:63342/创新实践/Price Drops.html">Price Drops </a></li>
+        <input type="text" name="search" placeholder="搜索..">
+    </ul>
+ </div>
+<div class="header">
+    <section></section>
+    <h1 class="date">AIR JORDAN</h1>
+    <p class="main">Since 1985, the sneakers with Michael Jordan’s name and world-renowned “Jumpman” silhouette have helped define and shape sneaker culture. It began with a standard Nike high-top and evolved with daring designs with each iteration. From graphic prints to patent leather to fighter planes and Ferrari-inspired designs, Jordan sneakers routinely transcend their basketball roots by refreshing their initial offering with new looks and color schemes to remain relevant to each new generation.</p>
+    </section>
+</div>
+<div class="leftcolumn">
+    <div class="dropdown" id="flip">
+        <h2>Color</h2>
+        <div class="dropdown-content" id="panel">
+            <a href = "Air%20jordan%20color.jsp?color=black" ><img src="color\black.jpg" alt="black" width="140" height="50"></a>
+            <a href = "Air%20jordan%20color.jsp?color=blue" ><img src="color\blue.jpg" alt="blue" width="140" height="50"></a>
+            <a href = "Air%20jordan%20color.jsp?color=grown" ><img src="color\brown.jpg" alt="black" width="140" height="50"></a>
+            <a href = "Air%20jordan%20color.jsp?color=copper" ><img src="color\copper.jpg" alt="black" width="140" height="50"></a>
+            <a href = "Air%20jordan%20color.jsp?color=cream" ><img src="color\cream.jpg" alt="black" width="140" height="50"></a>
+            <a href = "Air%20jordan%20color.jsp?color=gold" ><img src="color\gold.jpg" alt="black" width="140" height="50"></a>
+            <a href = "Air%20jordan%20color.jsp?color=green" ><img src="color\green.jpg" alt="black" width="140" height="50"></a>
+            <a href = "Air%20jordan%20color.jsp?color=grey" ><img src="color\grey.jpg" alt="black" width="140" height="50"></a>
+            <a href = "Air%20jordan%20color.jsp?color=yellow" ><img src="color\multi color.jpg" alt="black" width="140" height="50"></a>
+            <a href = "Air%20jordan%20color.jsp?color=red" ><img src="color\multi-color.jpg" alt="black" width="140" height="50"></a>
+        </div>
+    </div>
+    </br>
+    <div class="dropdown">
+        <h2>Year</h2>
+        <div class="dropdown-content">
+            <form action="Air jordan Year.jsp" method ="get">
+                <input id="fname" name="From" placeholder="From..">
+                <input id="lname" name="To" placeholder="To..">
+                <input type="submit" value="搜索">
+            </form>
+        </div>
+    </div>
+</div>
+<div class="rightcolumn">
+
+        <div class="img">
+            <a target="_blank" href="球鞋\AIR JORDAN 1 HIGH OG 'COURT PURPLE'.jpg">
+                <img src="球鞋\AIR JORDAN 1 HIGH OG 'COURT PURPLE'.jpg" alt="1" width="300" height="200">
+            </a>
+            <div class="desc"><strong>AIR JORDAN 1 HIGH OG 'COURT PURPLE'</strong></div>
+        </div>
+
+
+
+        <div class="img">
+            <a target="_blank" href="球鞋\AIR JORDAN 1 RETRO HIGH OG 'TOKYO BIO HACK'.jpg">
+                <img src="球鞋\AIR JORDAN 1 RETRO HIGH OG 'TOKYO BIO HACK'.jpg" alt="2" width="300" height="200">
+            </a>
+            <div class="desc"><strong>AIR JORDAN 1 RETRO HIGH OG 'TOKYO BIO HACK'</strong></div>
+        </div>
+
+
+
+        <div class="img">
+            <a target="_blank" href="球鞋\AIR JORDAN 1 RETRO HIGH OG 'OBSIDIAN, UNC'.jpg">
+                <img src="球鞋\AIR JORDAN 1 RETRO HIGH OG 'OBSIDIAN, UNC'.jpg" alt="3" width="300" height="200">
+            </a>
+            <div class="desc"><strong>AIR JORDAN 1 RETRO HIGH OG 'OBSIDIAN, UNC'</strong></div>
+        </div>
+
+
+        <div class="img">
+            <a target="_blank" href="球鞋\DIOR X AIR JORDAN 1 HIGH.jpg">
+                <img src="球鞋\DIOR X AIR JORDAN 1 HIGH.jpg" alt="1" width="300" height="200">
+            </a>
+            <div class="desc"><strong>DIOR X AIR JORDAN 1 HIGH</strong></div>
+        </div>
+
+
+
+        <div class="img">
+            <a target="_blank" href="球鞋\TRAVIS SCOTT X AIR JORDAN 1 RETRO HIGH OG 'MOCHA'.jpg">
+                <img src="球鞋\TRAVIS SCOTT X AIR JORDAN 1 RETRO HIGH OG 'MOCHA'.jpg" alt="2" width="300" height="200">
+            </a>
+            <div class="desc"><strong>TRAVIS SCOTT X AIR JORDAN 1 RETRO HIGH OG 'MOCHA'</strong></div>
+        </div>
+
+
+        <div class="img">
+            <a target="_blank" href="球鞋\AIR JORDAN 1 RETRO HIGH OG 'OBSIDIAN, UNC'.jpg">
+                <img src="球鞋\AIR JORDAN 1 RETRO HIGH OG 'OBSIDIAN, UNC'.jpg" alt="3" width="300" height="200">
+            </a>
+            <div class="desc">AIR JORDAN 1 RETRO HIGH OG 'OBSIDIAN, UNC'</div>
+        </div>
+
+
+        <div class="img">
+            <a target="_blank" href="球鞋\WMNS AIR JORDAN 1 RETRO HIGH OG 'BLUE CHILL'.jpg">
+                <img src="球鞋\WMNS AIR JORDAN 1 RETRO HIGH OG 'BLUE CHILL'.jpg" alt="1" width="300" height="200">
+            </a>
+            <div class="desc">WMNS AIR JORDAN 1 RETRO HIGH OG 'BLUE CHILL'</div>
+        </div>
+
+
+        <div class="img">
+            <a target="_blank" href="球鞋\AIR JORDAN 1 RETRO HIGH OG 'TOKYO BIO HACK'.jpg">
+                <img src="球鞋\AIR JORDAN 1 RETRO HIGH OG 'TOKYO BIO HACK'.jpg" alt="2" width="300" height="200">
+            </a>
+            <div class="desc">AIR JORDAN 1 RETRO HIGH OG 'TOKYO BIO HACK'</div>
+        </div>
+
+
+        <div class="img">
+            <a target="_blank" href="球鞋\AIR JORDAN 1 RETRO HIGH OG 'OBSIDIAN, UNC'.jpg">
+                <img src="球鞋\AIR JORDAN 1 RETRO HIGH OG 'OBSIDIAN, UNC'.jpg" alt="3" width="300" height="200">
+            </a>
+            <div class="desc">AIR JORDAN 1 RETRO HIGH OG 'OBSIDIAN, UNC'</div>
+        </div>
+
+</div>
+</body>
+</html>
+
