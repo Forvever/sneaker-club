@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>增删改</title>
+
     <style>
         *{
             margin: 0;
@@ -51,13 +52,13 @@
 <body>
 <div class="box">
     <ul>
-        <li>苹果 <span class="update">修改</span><span class="delete">删除</span></li>
-        <li>榴莲 <span class="update">修改</span><span class="delete">删除</span></li>
-        <li>橘子 <span class="update">修改</span><span class="delete">删除</span></li>
-        <li>香蕉 <span class="update">修改</span><span class="delete">删除</span></li>
-        <li>西瓜 <span class="update">修改</span><span class="delete">删除</span></li>
+        <li>Air jordan <span class="update">修改</span><span class="delete">删除</span></li>
+        <li>Nike <span class="update">修改</span><span class="delete">删除</span></li>
+        <li>Adidas <span class="update">修改</span><span class="delete">删除</span></li>
+        <li>Yeezy <span class="update">修改</span><span class="delete">删除</span></li>
     </ul>
     <div class="addBtn" id="addBtn">添加一项</div>
+    <a href="index.html"><div class="addBtn" >返回主页</div></a>
 </div>
 <script>
     var addBtn = document.getElementById('addBtn');
@@ -73,7 +74,7 @@
         }
     };
     //修改
-    /* for(var i = 0; i < upds.length; i++){
+     for(var i = 0; i < upds.length; i++){
      upds[i].onclick = function () {
      var res = prompt('请输入修改的内容');
      if(res){
@@ -90,7 +91,7 @@
      this.parentNode.parentNode.removeChild(this.parentNode);
      }
      }
-     }*/
+     }
     //事件委托：利用事件冒泡的机制，将事件绑定给祖先元素，事件发生的时候通过判断事件源的具体信息来做相应的操作
     oUl.onclick = function (event) {//event事件对象
         event = event || window.event;//处理ie下兼容性
